@@ -1,0 +1,136 @@
+@font-face {
+  font-family: 'Outfit';
+  src: url('assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'Young-Serif';
+  src: url('assets/fonts/outfit/YoungSerif-Regular.ttf');
+}
+
+:root {
+  /* primary colors */
+  --nutmeg: hwb(14 20% 48%);
+  --dark-rasberry: hsl(332, 51%, 32%);
+
+  /* neutral colors */
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-grey: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+#root {
+  background: var(--rose-white);
+  display: flex;
+  justify-content: center;
+}
+main {
+  width: 800px;
+  border-radius: 20px;
+  background: var(--white);
+  padding: 30px;
+  margin: 100px 0 0 0;
+}
+
+img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+h1,
+h2 {
+  font-family: 'Young-Serif';
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h2,
+td {
+  color: var(--nutmeg);
+}
+
+h1,
+p {
+  color: var(--dark-charcoal);
+}
+
+p {
+  font-size: 16px;
+  font-family: 'Outfit';
+}
+
+li::marker {
+  color: var(--nutmeg);
+}
+
+ol > li::marker {
+  font-weight: bold;
+}
+
+.preparation {
+  background: var(--rose-white);
+  padding: 5px 20px 5px 20px;
+  border-radius: 20px;
+}
+
+h3 {
+  color: var(--dark-rasberry);
+}
+
+.preparation li::marker {
+  color: var(--dark-rasberry);
+}
+
+li > span {
+  font-weight: bold;
+}
+
+li {
+  font-family: 'Outfit';
+  padding: 0 0 0 10px;
+  margin: 0 0 5px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+  font-family: 'Outfit';
+}
+
+th {
+  font-weight: 400;
+  padding: 0 0 0 20px;
+  color: gray;
+}
+
+td {
+  font-weight: bold;
+}
+
+th,
+td {
+  text-align: left;
+  font-family: 'Outfit';
+  padding: 10px 10px 10px 20px;
+}
+
+hr {
+  background-color: var(--light-grey);
+}
+
+.border-bottom {
+  border-bottom: 1px solid var(--light-grey);
+}

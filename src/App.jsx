@@ -1,6 +1,6 @@
 const App = () => {
   return (
-    <div>
+    <main>
       <img src="assets/images/image-omelette.jpeg" />
       <h1>Simple Omelette Recipe</h1>
       <p>
@@ -8,7 +8,7 @@ const App = () => {
         combines beaten eggs cooked to perfection, optionally filled with your
         choice of cheese, vegetables, or meats.
       </p>
-      <div>
+      <div className="preparation">
         <h3>Preparation time</h3>
         <ul>
           <li>
@@ -34,6 +34,7 @@ const App = () => {
           </li>
         </ul>
       </div>
+      <hr />
       <div>
         <h2>Instructions</h2>
         <ol>
@@ -70,6 +71,7 @@ const App = () => {
           </li>
         </ol>
       </div>
+      <hr />
       <div>
         <h2>Nutrition</h2>
         <table>
@@ -78,21 +80,20 @@ const App = () => {
             additional fillings.
           </caption>
           <tbody>
-            <tr>
+            <tr className="border-bottom">
               <th>Calories</th>
               <td>277kcal</td>
             </tr>
-            <hr />
-            <tr>
+
+            <tr className="border-bottom">
               <th>Carbs</th>
               <td>0g</td>
             </tr>
-            <hr />
-            <tr>
+            <tr className="border-bottom">
               <th>Protein</th>
               <td>20g</td>
             </tr>
-            <hr />
+
             <tr>
               <th>Fat</th>
               <td>22g</td>
@@ -100,7 +101,7 @@ const App = () => {
           </tbody>
         </table>
       </div>
-    </div>
+    </main>
   );
 };
 
